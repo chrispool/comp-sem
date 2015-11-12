@@ -1,0 +1,23 @@
+a man wearing a gray hat and wearing blue pants that is sitting in a forrest playing acordeon, 
+a black suitcase with a yellow inside on the ground with a picture inside. 
+A woman sitting and wearing a purple dress and a hat under a yellow and blue umbrella 
+
+
+man = n_man_1
+gray = a_gray_1
+hat = n_hat_1
+blue = a_blue_1
+pants = n_pants_2
+forest = n_forest_1
+accordion = n_accordion_1 
+black
+suitcase
+yellow
+picture
+woman
+purple
+dress
+hat
+umbrella
+
+
