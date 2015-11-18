@@ -13,5 +13,5 @@ model([d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11],
        f(1,n_dress_1,[d9]),
        f(1,a_purple_1, [d9]),
        f(1,a_yellow_1, [d11])
-       f(1,n_umbrella_1,[d11])])
+       f(1,n_parasol_1,[d11])])
       
