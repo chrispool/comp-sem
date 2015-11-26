@@ -1,3 +1,3 @@
-A girl is feeding the budgerirgar
-The girl wears a pink jacket
-The budgerigars sit on a roof
+A girl is feeding the budgerirgar.
+The girl wears a pink jacket.
+The budgerigars sit on a roof.
