@@ -1,3 +1,3 @@
-A car drives on the pond
+Two boats float on a pond
 The heron is flying over the pond
-The boat is red
+The red boat is floating on the pond
