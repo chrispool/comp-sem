@@ -1,3 +1,3 @@
-A business is wearing a balck necktie.
+A businessman is wearing a balck necktie.
 There is a laptop on the brown table.
-The cup is gree.
+The cup is green.

@@ -1,3 +1,3 @@
-A cellphone is holding the businessman.
-The necktie is not red.
-There is no window.
+A businesswoman is holding the cellphone.
+The necktie is blue.
+There is a window with red glass.
