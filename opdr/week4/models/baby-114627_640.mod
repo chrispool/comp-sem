@@ -1,0 +1,1 @@
+model([d1,d2,d3,n1,n2,n3],       [f(1,n_boy_1,[d1]),         f(1,n_bench_1,[d2]),         f(1,n_guitar_1,[d3]),         f(1,n_log_1,[d4]),         f(1,n_hair_1,[n1]),         f(1,a_blonde_1,[n1] ),         f(1,n_sweater_11,[n2]),         f(1,a_blue_1,[n2]),         f(1,n_leather_1,[n3]),         f(1,a_brown_1,[n3] )]).

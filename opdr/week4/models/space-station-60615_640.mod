@@ -1,0 +1,9 @@
+model([d1,d2,d3,d4,d5,d6],
+[f(1,n_astronaut_1,[d1]),
+f(1,n_flag_1,[d2]),
+f(1,n_desert_1,[d3]),
+f(1,n_space_station_1,[d4]),
+f(1,n_vehicle_1,[d5]),
+f(1,n_crater_1,[d6]),
+f(1,a_grey_1,[d1,d3,d4,d5,d6]) 
+]).

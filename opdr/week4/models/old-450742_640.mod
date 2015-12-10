@@ -1,0 +1,10 @@
+model([d1,d2,d3,d4,d5,n1,n2,n3,n4,n5,n6],
+      [f(1,n_sky_1,[d1]),
+       f(1,n_nature_3,[d2]),
+       f(1,n_lane_1,[d3]),
+       f(1,n_grass_1,[n1]),
+       f(1,n_tree_1,[n2,n3]),
+       f(1,n_bush_1,[n4,n5]),
+       f(1,n_oldman_1,[d4]),
+       f(1,n_oldwoman_1,[d5]),
+       f(1,n_staff_2,[n6])]).

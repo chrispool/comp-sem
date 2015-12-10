@@ -1,0 +1,9 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8],
+	[f(1,n_boy_1,[d1,d2]),
+	 f(1,n_accordion_1,[d3,d4]),
+	 f(1,n_hat_1,[d5,d6]),
+	 f(1,n_step_4,[d7]),
+	 f(1,n_can_1,[d8]),
+	 f(1,a_black_1,[d5]),
+	 f(1,a_spotted_1,[d6]),
+	 f(1,a_red_1,[d3,d4])]).

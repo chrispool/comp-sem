@@ -1,0 +1,1 @@
+model([d1,d2,d3,d4,n1,n2],       [f(1,n_bench_1,[d1]),        f(1,n_tree_1,[d2]),        f(1,n_ship_1,[d3]),        f(1,n_sea_1,[d4]),        f(1,n_wood_1,[n1] ),        f(1,n_arm_4,[n2]),        f(1,a_brown_1,[n1]),        f(1,a_metal_1,[n2]),        f(1,a_white_1,[n2]) ] ).

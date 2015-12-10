@@ -1,0 +1,11 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8,n1,n2,n3],
+      [f(1,n_building_1,[d1]),
+       f(1,n_gate_1,[n1]),
+       f(1,n_fence_1,[n2]),
+       f(1,n_man_1,[d2,d3]),
+       f(1,n_accordion_1,[d4]),
+       f(1,n_staff_2,[d5]),
+       f(1,n_violin_1,[d6]),
+       f(1,n_case_5,[d7]),
+       f(1,n_hat_1,[n3]),
+       f(1,n_bag_1,[d8])]).

@@ -1,0 +1,12 @@
+model([d1,d2,d3,n1,n2,n3],
+       [f(1,n_owl_1,[d1]),
+	f(1,n_prey_2,[d2]),
+	f(1,n_bird_1,[d2]),
+	f(1,n_snow_2,[d3]),
+	f(1,n_eye_1,[n1]),
+	f(1,n_beak_2,[n2]),
+	f(1,n_head_1,[n3]),
+	f(1,a_black_1,[d2]),
+	f(1,a_white_1,[d1,d3]),
+	f(1,a_brown_1,[d1]),
+	f(1,a_yellow_1,[n1,n2])]).

@@ -1,0 +1,9 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8],
+      [f(1,n_boy_1,[d1]),
+       f(0,'Justin_Bieber',d1),
+       f(1,n_piano_1,[d2]),
+       f(1,n_smoke_1,[d3]),
+       f(1,n_mic_1,[d4]),
+       f(1,n_cap_1,[d5]),
+	   f(1,a_white_1,[d2]),
+	   f(1,a_red_1,[d5])]).

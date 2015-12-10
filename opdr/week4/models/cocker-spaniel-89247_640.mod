@@ -1,0 +1,9 @@
+model([d1,d2,d3,d4],
+	[f(1,n_cocker_1,[d1]),
+	 f(1,n_car_1,[d2]),
+	 f(1,n_car_mirror_1,[d3]),
+	 f(1,n_handle_1,[d4]),
+	 f(1,a_convertable_2,[d2]),
+	 f(1,a_red_1,[d2,d3]),
+	 f(1,a_sad_1,[d1]),
+	 f(1,a_silver_3,[d4])]).

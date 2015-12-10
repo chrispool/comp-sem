@@ -1,0 +1,9 @@
+model([d1,d2,d3,d4,n1,n2],
+      [f(1,n_goat_1,[d1,d2]),
+       f(1,n_girl_1,[d3]),
+       f(1,n_building_1,[d4]),
+       f(1,n_wall_1,[n1]),
+       f(1,a_brown_1,[d1]),
+       f(1,n_brick_1,[n2]),
+       f(1,a_red_1,[n2]),
+       f(1,a_white_2,[d2])]).

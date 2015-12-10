@@ -1,0 +1,9 @@
+model([d1,d2,d3,d4,n1],
+       [f(1,n_dial_telephone_1,[d1]),
+	f(1,n_pen_1,[d2]),
+	f(1,n_sheet_2,[d3]),
+	f(1,n_table_2,[d4]),
+	f(1,n_earpiece_2,[n1]),
+	f(1,a_black_1,[d1,d2]),
+	f(1,a_white_1,[d3]),
+	f(1,a_brown_1,[d4])]).
