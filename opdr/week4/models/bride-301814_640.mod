@@ -1,9 +1,0 @@
-model([d1,d2,d3,d4,d5],
-      [f(1,n_woman_1,[d1]),
-       f(1,n_dress_1,[d2]),
-       f(1,a_white_1,[d2]),
-       f(1,n_piano_1,[d3]),
-       f(1,a_black_1,[d3,d4]),
-       f(1,n_bench_1,[d4]),
-       f(1,n_hair_1,[d5]),
-       f(1,a_brown_1,[d5])]).

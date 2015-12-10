@@ -1,1 +1,0 @@
-model( [d1,d2,n1,n2,n3,n4,n5,n6],       [f(1,n_bald_eagle_1,[d1]),        f(1,n_tree_1,[d2] ),        f(1,n_branch_2,[n1]),        f(1,n_head_1,[n2]),        f(1,a_white_1,[n2]),        f(1,n_feather_1,[n3] ),        f(1,a_dark_2,[n3]),        f(1,a_gray_1,[n3]),        f(1,n_tail_1,[n4]),        f(1,a_white_1,[n4]),        f(1,n_claw_1,[n5])]).

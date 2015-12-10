@@ -1,9 +1,0 @@
-model([d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14],
-      [f(1,n_boy_1,[d1]),
-       f(1,n_short_pants_1,[d2]),
-       f(1,n_shirt_1,[d3]),
-       f(1,a_blue_1,[d2]),
-       f(1,a_striped_1,[d3]),
-       f(1,n_pigeon_1,[d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13]),
-       f(1,n_street_1,[d14])]).
-      
