@@ -9,4 +9,7 @@ model([d1,d2,d3,d4,d5,d6,d7,d8,d9,d10],
 	 f(1,n_wall_1,[d10]),
 	 f(1,a_black_1,[d1,d2]),
 	 f(1,a_white_1,[d3,d9]),
-	 f(1,a_yellow_1,[d10])]).
+	 f(1,a_yellow_1,[d10]),
+	 f(2,s_supports,[(d3,d1),(d3,d2),(d3,d6),(d3,d7)]),
+	 f(2,s_touch,[(d1,d3),(d3,d1),(d2,d3),(d3,d2)(d1,d6),(d6,d1),(d4,d10),(d10,d4),(d5,d10),(d10,d5),(d3,d7),(d7,d3),(d9,d10),(d10,d9)]),
+	 f(2,s_near,[(d1,d2),(d2,d1),(d2,d7),(d7,d2),(d8,d9),(d9,d8)])]).
