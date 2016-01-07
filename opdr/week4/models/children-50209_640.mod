@@ -7,6 +7,6 @@ model([d1,d2,d3,d4,d5,d6,d7,d8],
 	 f(1,a_black_1,[d5]),
 	 f(1,a_spotted_1,[d6]),
 	 f(1,a_red_1,[d3,d4]),
-	 f(2,s_near,[(d1,d2),(d2,d1),(d1,d4),(d4,d1),(d2,d4),(d4,d2),(d1,d8),(d8,d1),(d2,d8),(d8,d2)]),
+	 f(2,s_near,[(d1,d2),(d2,d1),(d1,d4),(d4,d1),(d2,d3),(d3,d2),(d1,d8),(d8,d1),(d2,d8),(d8,d2),(d1,d7),(d7,d1),(d2,d7),(d7,d2)]),
 	 f(2,s_touch,[(d1,d3),(d3,d1),(d2,d3),(d3,d2),(d1,d5),(d5,d1),(d2,d6),(d6,d2)]),
-	 f(2,s_supports,[(d1,d3),(d2,d4)])]).
+	 f(2,s_supports,[(d1,d3),(d2,d4),(d1,d5),(d2,d6)])]).
