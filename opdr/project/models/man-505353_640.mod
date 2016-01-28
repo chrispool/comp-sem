@@ -1,0 +1,12 @@
+model([d1,d2,d3,d4,d5,d6,n1,n2],
+      [f(1,n_man_1,[d1]),
+       f(1,n_beard_1,[n1]),
+       f(1,n_hand_1,[n2]),
+       f(1,n_pencil_1,[d2]),
+       f(1,n_painting_1,[d3,d4]),
+       f(1,n_book_1,[d5]),
+       f(1,n_room_1,[d6]),
+	   f(2,s_touches,[(n2,d2),(d2,n2)]),
+	   f(2,s_supports,[(d3,n2)]),
+	   f(2,s_part_of,[(n2,d1),(n1,d1)]),
+	   f(2,s_near,[(d5,d3),(d3,d5),(n2,d5),(d5,n2)])]).

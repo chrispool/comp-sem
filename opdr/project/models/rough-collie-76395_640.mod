@@ -1,0 +1,11 @@
+model([d1,d2,d3,d4,d5],
+      [f(1,n_moor_2,[d1]),
+f(1,n_bosk_1,[d2]),
+f(1,n_collie_1,[d3]),
+f(1,n_Samoyed_3,[d4]),
+f(1,n_Great_Dane_1,[d5]),
+f(1,a_green_1,[d1,d2]),
+f(1,a_white_1,[d4]),
+f(2,s_touches,[(d3,d1),(d4,d1),(d5,d1),(d1,d3),(d1,d4),(d1,d5)]),
+f(2,s_supports,[(d1,d3),(d1,d4),(d1,d5)]),
+f(2,s_near,[(d5,d4),(d4,d5),(d5,d3),(d3,d5),(d3,d4),(d4,d3)])]).

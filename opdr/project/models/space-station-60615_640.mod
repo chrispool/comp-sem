@@ -1,0 +1,12 @@
+model([d1,d2,d3,d4,d5,d6],
+      [f(1,n_astronaut_1,[d1]),
+       f(1,n_flag_1,[d2]),
+       f(1,n_desert_1,[d3]),
+       f(1,n_space_station_1,[d4]),
+       f(1,n_vehicle_1,[d5]),
+       f(1,n_crater_1,[d6]),
+       f(1,a_grey_1,[d1,d3,d4,d5,d6]),
+	   f(2,s_touches,[(d3,d1),(d3,d2),(d3,d4),(d3,d5)]),
+	   f(2,s_near,[(d1,d2),(d3,d6),(d4,d5)]),
+	   f(2,s_supports,[(d3,d1),(d3,d2),(d3,d4),(d3,d5)])
+]).

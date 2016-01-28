@@ -1,0 +1,15 @@
+model([d1,d2,d3,d4,d5,d6,d7],
+      [f(1,a_old_1,[d1]),
+       f(1,n_violinist_1,[d1]),
+       f(1,n_human_face_1,[d2]),
+       f(1,n_viola_3,[d3]),
+       f(1,n_tree_1,[d4]),
+       f(1,n_hat_1,[d5]),
+       f(1,n_shrub_1,[d6]),
+       f(1,n_bow_1,[d7]),
+       f(1,a_blue_1,[d5]),
+       f(2,s_supports,[(d2,d5),(d1,d3)]),
+       f(2,s_touches,[(d2,d5),(d5,d2),(d2,d3),(d3,d2),(d7,d3),(d3,d7),(d1,d3),(d3,d1)]),
+       f(2,s_near,[(d4,d6),(d6,d4),(d2,d5),(d5,d2),(d2,d3),(d3,d4),(d7,d3),(d3,d7)]),
+       f(2,s_part_of,[(d2,d1)])]).
+      

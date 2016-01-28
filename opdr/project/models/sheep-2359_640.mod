@@ -1,0 +1,11 @@
+model([d1,d2,d3,d4,d5,d6],
+      [f(1,n_sheep_1,[d1,d2,d3]),
+       f(1,n_wall_1,[d4]),
+       f(1,n_road_1,[d5]),
+       f(1,n_field_1,[d6]),
+       f(1,a_stone_1,[d4]),
+       f(1,a_beige_1,[d1,d2,d3]),
+       f(1,a_green_1,[d6]),
+       f(1,a_grey_1,[d5]),
+       f(2,s_touches,[(d1,d4),(d2,d4),(d3,d4),(d1,d5),(d2,d5),(d3,d5)]),
+       f(2,s_supports,[(d5,d1),(d5,d2),(d5,d3)])]).

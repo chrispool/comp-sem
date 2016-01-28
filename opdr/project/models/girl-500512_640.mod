@@ -1,0 +1,13 @@
+model([d1,d2,d3,d4,d5,d6,d7],
+      [f(1,n_woods_1,[d1]),
+       f(1,n_byway_1,[d2]),
+       f(1,n_girl_1,[d3]),
+       f(1,n_boy_1,[d4]),
+       f(1,n_shirt_1,[d5]),
+       f(1,a_red_1,[d5]),
+       f(1,n_blue_jean_1,[d6]),
+       f(1,n_dress_1,[d7]),
+       f(1,a_white_1,[d7]),
+       f(2,s_supports,[(d3,d4)]),
+       f(2,s_touches,[(d3,d4),(d4,d3)]),
+       f(2,s_near,[(d1,d3),(d1,d4),(d3,d1),(d4,d1),(d1,d2),(d2,d1)])]).

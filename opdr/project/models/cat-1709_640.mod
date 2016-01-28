@@ -1,0 +1,13 @@
+model([d1,d2,d3,d4,d5],
+      [f(1,n_lawn_1,[d1]),
+       f(1,n_cat_1,[d2]),
+       f(1,a_grey_1,[d2]),
+       f(1,a_white_1,[d2]),
+       f(1,n_eye_1,[d3,d4]),
+       f(1,a_green_1,[d1,d3,d4]),
+       f(1,n_tulip_1,[d5]),
+       f(1,a_red_1,[d5]),
+       f(2,s_supports,[(d1,d2),(d1,d5)]),
+       f(2,s_touches,[(d2,d1),(d5,d1)]),
+       f(2,s_part_of,[(d3,d2),(d4,d2)]),
+       f(2,s_occludes,[(d2,d1),(d5,d1)])]).

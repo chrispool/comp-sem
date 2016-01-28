@@ -1,0 +1,13 @@
+model([d1,d2,d3,d4,n1],
+      	[f(1,n_dial_telephone_1,[d1]),
+       	f(1,n_pen_1,[d2]),
+       	f(1,n_sheet_2,[d3]),
+       	f(1,n_table_2,[d4]),
+       	f(1,n_earpiece_1,[n1]),
+       	f(1,a_black_1,[d1,d2]),
+       	f(1,a_white_1,[d3]),
+		f(1,a_brown_1,[d4]),
+		f(2,s_part_of,[(n1,d1)]),
+		f(2,s_touches,[(d1,d3),(d3,d1),(d2,d3),(d3,d2),(d3,d4),(d4,d3),(d1,d4),(d4,d1)]),
+		f(2,s_supports,[(d4,d1),(d4,d3)]),
+		f(2,s_near,[(d1,d2),(d2,d1)])]).

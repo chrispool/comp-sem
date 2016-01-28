@@ -1,0 +1,11 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8],
+      [f(1,n_boy_1,[d1]),
+       f(1,n_girl_1,[d2]),
+       f(1,n_lake_1,[d3]),
+       f(1,n_platform_1,[d4]),
+       f(1,n_tee_shirt_1,[d5]),
+       f(1,n_blouse_1,[d6]),
+       f(1,a_black_1,[d5]),
+       f(2,s_supports,[(d4,d1),(d4,d2),(d2,d6),(d1,d5)]),
+	   f(2,s_near,[(d3,d2),(d2,d3),(d1,d3),(d3,d1)]),
+	   f(2,s_touches,[(d1,d2),(d2,d1),(d3,d4),(d4,d3),(d1,d4),(d4,d1),(d4,d2),(d2,d4),(d2,d6),(d1,d5),(d6,d2),(d5,d1)])]).

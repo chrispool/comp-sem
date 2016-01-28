@@ -1,0 +1,13 @@
+model([d1,d2,d3,d4,d5,d6,d7,d8],
+      [f(1,n_sheep_1,[d1,d2]),
+       f(1,n_flock_5,[d3]),
+       f(1,n_horse_1,[d4]),
+       f(1,n_dog_1,[d5]),
+       f(1,n_mountain_1,[d6]),
+       f(1,n_sky_1,[d8]),
+       f(1,a_orange_1,[d8]),
+       f(1,n_horseman_1,[d7]),
+       f(2,s_near,[(d7,d5),(d5,d7),(d7,d3),(d3,d7)]),
+       f(2,s_part_of,[(d1,d3),(d2,d3)]),
+       f(2,s_supports,[(d4,d7)]),
+       f(2,s_touches,[(d1,d2),(d2,d1),(d4,d7),(d7,d4)])]).
