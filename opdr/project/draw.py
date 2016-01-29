@@ -8,9 +8,11 @@ from collections import defaultdict
 class ImageDrawPanel(QtGui.QGraphicsPixmapItem):
 	def __init__(self, pixmap=None, parent=None, scene=None):
 		super(ImageDrawPanel, self).__init__()
+		self.parent = parent
+		self.rect = set()
 		self.startX, self.startY = -1, -1
 		self.radius = 10
-		self.CornerList=[]
+		self.rectList = defaultdict(lambda : defaultdict(list))
 
 		self.pen = QtGui.QPen(QtCore.Qt.SolidLine)
 		self.pen.setColor(QtCore.Qt.black)
@@ -18,12 +20,24 @@ class ImageDrawPanel(QtGui.QGraphicsPixmapItem):
 
 		self.brush = QtGui.QBrush(QtCore.Qt.yellow)
 
+	def dd(self):
+		return list()
 
+	
 	def paint(self, painter, option, widget=None):
 		painter.drawPixmap(0, 30, self.pixmap())
 		painter.setPen(self.pen)
 		painter.setBrush(self.brush)
-		painter.drawEllipse(10,self.startX,400,400)
+		width = self.endX - self.startX
+		height = self.endY - self.startY
+		self.rectList[self.parent.imageList.currentItem().text()][self.parent.modelList.currentItem().text()] = [self.startX, self.startY, width, height]
+		#remove from canvas
+		print(self.rectList)
+		#draw them again	
+		for items in self.rectList[self.parent.imageList.currentItem().text()]:
+			x,y,w,h = self.rectList[self.parent.imageList.currentItem().text()][items]
+			self.rect.add(painter.drawRect(x, y, w, h))
+				
 
 
 	def mousePressEvent (self, event):
@@ -50,6 +64,7 @@ class ImageDraw(QtGui.QWidget):
 
 	def initUI(self):
 		self.DRAW = []
+		self.modelList = QtGui.QListWidget(self)
 		indir = 'images'
 		self.imageList = QtGui.QListWidget(self)
 		for root, dirs, filenames in os.walk(indir):
@@ -61,12 +76,12 @@ class ImageDraw(QtGui.QWidget):
 
 		self.scene = QtGui.QGraphicsScene()
 		self.scene.setSceneRect(0, 0, 800, 600)
-		self.imagePanel = ImageDrawPanel(scene = self.scene)
+		self.imagePanel = ImageDrawPanel(scene = self.scene, parent = self)
 		self.scene.addItem(self.imagePanel)
 
 		self.view = QtGui.QGraphicsView(self.scene)
 
-		self.modelList = QtGui.QListWidget(self)
+		
 		self.loadImage()
 
 		self.hbox = QtGui.QHBoxLayout()
@@ -87,15 +102,18 @@ class ImageDraw(QtGui.QWidget):
 		#pixmap = pixmap.scaledToWidth(600)
 		self.imagePanel.setPixmap(pixmap)
 		self.modelList.clear()
+
 		with open('models/' + self.imageList.currentItem().text()[:-4] + '.mod') as f:
 			for line in f.readlines():
 				if ',n_' in line:
 					self.modelList.addItem(line.strip())
-		
+					
 
 	def addToDict(self,x,y):
 		print(x,y)
 
+	def getCurrentModelItem(self):
+		return self.modelList.currentItem().text()
 
 def main():
     
