@@ -15,8 +15,8 @@ class ImageDrawPanel(QtGui.QGraphicsPixmapItem):
 		self.rectList = defaultdict(lambda : defaultdict(list))
 
 		self.pen = QtGui.QPen(QtCore.Qt.SolidLine)
-		self.pen.setColor(QtCore.Qt.black)
-		self.pen.setWidth(2)
+		self.pen.setColor(QtCore.Qt.yellow)
+		self.pen.setWidth(5)
 
 		self.brush = QtGui.QBrush(QtCore.Qt.yellow)
 
@@ -27,17 +27,17 @@ class ImageDrawPanel(QtGui.QGraphicsPixmapItem):
 	def paint(self, painter, option, widget=None):
 		painter.drawPixmap(0, 30, self.pixmap())
 		painter.setPen(self.pen)
-		painter.setBrush(self.brush)
+		#painter.setBrush(self.brush)
 		width = self.endX - self.startX
 		height = self.endY - self.startY
 		self.rectList[self.parent.imageList.currentItem().text()][self.parent.modelList.currentItem().text()] = [self.startX, self.startY, width, height]
 		#remove from canvas
-		print(self.rectList)
+		#print(self.rectList)
 		#draw them again	
 		for items in self.rectList[self.parent.imageList.currentItem().text()]:
 			x,y,w,h = self.rectList[self.parent.imageList.currentItem().text()][items]
-			self.rect.add(painter.drawRect(x, y, w, h))
-				
+						
+			rect = painter.drawRect(x, y, w, h)
 
 
 	def mousePressEvent (self, event):
